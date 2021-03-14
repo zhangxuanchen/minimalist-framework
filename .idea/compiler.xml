@@ -9,6 +9,7 @@
         <module name="minimalist-framework-common" />
         <module name="simple-dutylist" />
         <module name="simple-event-bus" />
+        <module name="simple-workflow" />
       </profile>
     </annotationProcessing>
   </component>
