@@ -17,10 +17,11 @@
 
     <properties>
         <minimalist-framework-common.version>1.0.0-SNAPSHOT</minimalist-framework-common.version>
-        <simple-event-bus.version>1.0.0-SNAPSHOT</simple-event-bus.version>
         <spring-boot-starter.version>2.4.3</spring-boot-starter.version>
         <fastjson.version>1.2.65</fastjson.version>
         <lombok.version>1.16.18</lombok.version>
+        <simple-event-bus.version>1.0.0-SNAPSHOT</simple-event-bus.version>
+        <simple-dutylist.version>1.0.0-SNAPSHOT</simple-dutylist.version>
     </properties>
 
     <dependencyManagement>
@@ -30,11 +31,7 @@
             <artifactId>minimalist-framework-common</artifactId>
             <version>${minimalist-framework-common.version}</version>
         </dependency>
-        <dependency>
-            <groupId>minimalist-framework</groupId>
-            <artifactId>simple-event-bus</artifactId>
-            <version>${simple-event-bus.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -54,6 +51,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>minimalist-framework</groupId>
+            <artifactId>simple-event-bus</artifactId>
+            <version>${simple-event-bus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>minimalist-framework</groupId>
+            <artifactId>simple-dutylist</artifactId>
+            <version>${simple-dutylist.version}</version>
         </dependency>
     </dependencies>
     </dependencyManagement>
