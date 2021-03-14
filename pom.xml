@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>minimalist-framework</groupId>
+    <artifactId>minimalist-framework</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <modules>
+        <module>simple-event-bus</module>
+        <module>minimalist-framework-common</module>
+    </modules>
+
+    <properties>
+        <minimalist-framework-common.version>1.0.0-SNAPSHOT</minimalist-framework-common.version>
+        <simple-event-bus.version>1.0.0-SNAPSHOT</simple-event-bus.version>
+        <spring-boot-starter.version>2.2.5</spring-boot-starter.version>
+        <fastjson.version>1.2.65</fastjson.version>
+    </properties>
+
+    <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>minimalist-framework</groupId>
+            <artifactId>minimalist-framework-common</artifactId>
+            <version>${minimalist-framework-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>minimalist-framework</groupId>
+            <artifactId>simple-event-bus</artifactId>
+            <version>${simple-event-bus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+    </dependencies>
+    </dependencyManagement>
+</project>
