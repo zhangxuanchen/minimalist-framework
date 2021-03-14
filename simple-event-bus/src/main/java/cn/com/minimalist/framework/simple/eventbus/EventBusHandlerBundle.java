@@ -2,7 +2,7 @@ package cn.com.minimalist.framework.simple.eventbus;
 
 import java.util.List;
 
-public interface EventBusHandlerBundle<T ,OUT> {
+ interface EventBusHandlerBundle<T ,OUT> {
 
     void registerEventBusHandler(EventBusHandler<T, OUT> eventHandler);
 

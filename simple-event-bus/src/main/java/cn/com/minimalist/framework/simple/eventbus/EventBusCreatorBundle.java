@@ -2,7 +2,7 @@ package cn.com.minimalist.framework.simple.eventbus;
 
 import java.util.List;
 
-public interface EventBusCreatorBundle<IN, T> {
+ interface EventBusCreatorBundle<IN, T> {
 
     void registerAsyncEventBusCreator(AsyncEventBusCreator<IN, T> eventCreator);
 

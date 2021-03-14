@@ -1,6 +1,6 @@
 package cn.com.minimalist.framework.simple.eventbus;
 
-public interface EventBusBoardProducerBridge<IN, T> {
+ interface EventBusBoardProducerBridge<IN, T> {
 
     EventBusStorage<T> getEventBusStorage();
 

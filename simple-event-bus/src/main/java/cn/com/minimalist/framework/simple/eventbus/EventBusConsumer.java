@@ -1,7 +1,6 @@
 package cn.com.minimalist.framework.simple.eventbus;
 
 import cn.com.minimalist.framework.common.ResponseResult;
-
 import java.util.ArrayList;
 import java.util.List;
 
