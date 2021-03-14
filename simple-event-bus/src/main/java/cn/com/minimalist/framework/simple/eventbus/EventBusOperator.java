@@ -125,6 +125,22 @@ public class EventBusOperator<IN, T, OUT> implements
         eventBusConsumer.consume();
     }
 
+    public void registerAsyncEventBusCreator(AsyncEventBusCreator<IN, T> eventCreator){
+        eventBusCreatorBundle.registerAsyncEventBusCreator(eventCreator);
+    }
+
+    public void unregisterAsyncEventBusCreator(AsyncEventBusCreator<IN, T> eventCreator){
+        eventBusCreatorBundle.unregisterAsyncEventBusCreator(eventCreator);
+    }
+
+    public void registerEventBusHandler(EventBusHandler<T, OUT> eventHandler){
+        eventBusHandlerBundle.registerEventBusHandler(eventHandler);
+    }
+
+    public void unregisterEventBusHandler(EventBusHandler<T, OUT> eventHandler){
+        eventBusHandlerBundle.unregisterEventBusHandler(eventHandler);
+    }
+
     public ResponseResult<List<ResponseResult>> execute(IN in, SyncEventBusCreator<IN, T> eventCreator){
         T t = eventBusProducer.produce(in, eventCreator);
         return eventBusConsumer.consume(t);
