@@ -10,10 +10,10 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <modules>
-        <module>simple-event-bus</module>
+        <module>basic-event-bus</module>
         <module>minimalist-framework-common</module>
-        <module>simple-dutylist</module>
-        <module>simple-workflow</module>
+        <module>basic-dutylist</module>
+        <module>basic-workflow</module>
     </modules>
 
     <properties>
@@ -21,9 +21,9 @@
         <spring-boot-starter.version>2.4.3</spring-boot-starter.version>
         <fastjson.version>1.2.65</fastjson.version>
         <lombok.version>1.16.18</lombok.version>
-        <simple-event-bus.version>1.0.0-SNAPSHOT</simple-event-bus.version>
-        <simple-dutylist.version>1.0.0-SNAPSHOT</simple-dutylist.version>
-        <simple-workflow.version>1.0.0-SNAPSHOT</simple-workflow.version>
+        <basic-event-bus.version>1.0.0-SNAPSHOT</basic-event-bus.version>
+        <basic-dutylist.version>1.0.0-SNAPSHOT</basic-dutylist.version>
+        <basic-workflow.version>1.0.0-SNAPSHOT</basic-workflow.version>
     </properties>
 
     <dependencyManagement>
@@ -33,7 +33,6 @@
             <artifactId>minimalist-framework-common</artifactId>
             <version>${minimalist-framework-common.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -56,18 +55,18 @@
         </dependency>
         <dependency>
             <groupId>minimalist-framework</groupId>
-            <artifactId>simple-event-bus</artifactId>
-            <version>${simple-event-bus.version}</version>
+            <artifactId>basic-event-bus</artifactId>
+            <version>${basic-event-bus.version}</version>
         </dependency>
         <dependency>
             <groupId>minimalist-framework</groupId>
-            <artifactId>simple-dutylist</artifactId>
-            <version>${simple-dutylist.version}</version>
+            <artifactId>basic-dutylist</artifactId>
+            <version>${basic-dutylist.version}</version>
         </dependency>
         <dependency>
             <groupId>minimalist-framework</groupId>
-            <artifactId>simple-workflow</artifactId>
-            <version>${simple-workflow.version}</version>
+            <artifactId>basic-workflow</artifactId>
+            <version>${basic-workflow.version}</version>
         </dependency>
     </dependencies>
     </dependencyManagement>

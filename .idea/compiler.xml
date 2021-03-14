@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="basic-dutylist" />
+        <module name="basic-event-bus" />
+        <module name="basic-workflow" />
         <module name="minimalist-framework-common" />
-        <module name="simple-dutylist" />
-        <module name="simple-event-bus" />
-        <module name="simple-workflow" />
       </profile>
     </annotationProcessing>
   </component>
